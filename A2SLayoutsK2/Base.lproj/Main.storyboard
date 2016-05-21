@@ -381,12 +381,60 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell4" rowHeight="160" id="7F9-T5-Iyw">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell4" rowHeight="160" id="7F9-T5-Iyw" customClass="P1ProductDetailCell4TableViewCell" customModule="A2SLayoutsK2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="794" width="600" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7F9-T5-Iyw" id="fSl-hA-e36">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="159"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sqx-TU-REG">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="159"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Z0i-Fn-FXb">
+                                                        <size key="itemSize" width="100" height="150"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectCell0" id="tDc-j6-oNC" customClass="P1ProductDetailCell4CollectionViewCell" customModule="A2SLayoutsK2" customModuleProvider="target">
+                                                            <rect key="frame" x="5" y="5" width="100" height="150"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FoQ-T8-AdP">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnu-1r-S2r">
+                                                                        <rect key="frame" x="0.0" y="103" width="100" height="21"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <connections>
+                                                                <outlet property="imageViewProduct" destination="FoQ-T8-AdP" id="ZXt-xZ-IIi"/>
+                                                                <outlet property="lblProductName" destination="FoQ-T8-AdP" id="H77-um-8yR"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="7F9-T5-Iyw" id="mRU-rP-cFK"/>
+                                                        <outlet property="delegate" destination="7F9-T5-Iyw" id="VFj-fj-hdh"/>
+                                                    </connections>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="sqx-TU-REG" secondAttribute="bottom" constant="-8" id="13M-1t-enV"/>
+                                                <constraint firstItem="sqx-TU-REG" firstAttribute="leading" secondItem="fSl-hA-e36" secondAttribute="leadingMargin" constant="-8" id="EU3-ry-84L"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="sqx-TU-REG" secondAttribute="trailing" constant="-8" id="oHy-fJ-2VX"/>
+                                                <constraint firstItem="sqx-TU-REG" firstAttribute="top" secondItem="fSl-hA-e36" secondAttribute="topMargin" constant="-8" id="p5O-bA-fsS"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>

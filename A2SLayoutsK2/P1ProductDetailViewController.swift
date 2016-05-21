@@ -14,13 +14,15 @@ class P1ProductDetailViewController: UIViewController, UITableViewDataSource, UI
     @IBOutlet weak var tableView:UITableView!
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
             return 2
         } else if section == 1 {
+            return 1
+        } else if section == 2 {
             return 1
         } else {
             return 1
@@ -52,10 +54,14 @@ class P1ProductDetailViewController: UIViewController, UITableViewDataSource, UI
                 let cell4 = tableView.dequeueReusableCellWithIdentifier(baseCell.tableCell0)
                 return cell4!
             }
-        } else {
+        } else if indexPath.section == 2 {
             let cell5 = tableView.dequeueReusableCellWithIdentifier(baseCell.tableCell3)
             
             return cell5!
+        } else {
+            let cell6 = tableView.dequeueReusableCellWithIdentifier(baseCell.tableCell4) as? P1ProductDetailCell4TableViewCell
+            
+            return cell6!
         }
     }
     
@@ -65,15 +71,19 @@ class P1ProductDetailViewController: UIViewController, UITableViewDataSource, UI
             if indexPath.row == 0 {
                 return 300
             } else {
-                return 100
+                return 160
             }
-        } else {
+        } else if indexPath.section == 1 {
             //
             if indexPath.row == 1 {
-                return 100
+                return 160
             } else {
-                return 100
+                return 160
             }
+        } else if indexPath.section == 2 {
+            return 160
+        } else {
+            return 160
         }
     }
     
