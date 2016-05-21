@@ -17,7 +17,7 @@ class Page1ViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 5
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -38,9 +38,13 @@ class Page1ViewController: UIViewController, UITableViewDataSource, UITableViewD
             
             return cell2!
         } else if indexPath.row == 3 {
-            let cell3 = tableView.dequeueReusableCellWithIdentifier(baseCell.tableCell2) as? P1Cell2TableViewCell
+            let cell3 = tableView.dequeueReusableCellWithIdentifier(baseCell.tableCell1) as? P1Cell1TableViewCell
             
             return cell3!
+        } else if indexPath.row == 4 {
+            let cell4 = tableView.dequeueReusableCellWithIdentifier(baseCell.tableCell2) as? P1Cell2TableViewCell
+            
+            return cell4!
         } else {
             let cellNill = tableView.dequeueReusableCellWithIdentifier(baseCell.tableCellNill)
             
@@ -56,11 +60,12 @@ class Page1ViewController: UIViewController, UITableViewDataSource, UITableViewD
         } else if indexPath.row == 2 {
             return 24
         } else if indexPath.row == 3 {
-            return 800
+            return 200
         } else {
-            return 100
+            return 800
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
