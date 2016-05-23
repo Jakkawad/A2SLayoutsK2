@@ -36,15 +36,15 @@ class Page1ViewController: UIViewController, UITableViewDataSource, UITableViewD
             
             return cell1!
         } else if indexPath.row == 2 {
-            let cell2 = tableView.dequeueReusableCellWithIdentifier(baseCell.tableCell0)
+            let cell2 = tableView.dequeueReusableCellWithIdentifier(baseCell.tableCell2)
             
             return cell2!
         } else if indexPath.row == 3 {
-            let cell3 = tableView.dequeueReusableCellWithIdentifier(baseCell.tableCell1) as? P1Cell1TableViewCell
+            let cell3 = tableView.dequeueReusableCellWithIdentifier(baseCell.tableCell3) as? P1Cell3TableViewCell
             
             return cell3!
         } else if indexPath.row == 4 {
-            let cell4 = tableView.dequeueReusableCellWithIdentifier(baseCell.tableCell2) as? P1Cell2TableViewCell
+            let cell4 = tableView.dequeueReusableCellWithIdentifier(baseCell.tableCell4) as? P1Cell2TableViewCell
             
             return cell4!
         } else {
