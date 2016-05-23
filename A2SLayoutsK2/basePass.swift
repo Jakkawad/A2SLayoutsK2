@@ -10,4 +10,5 @@ import Foundation
 
 struct basePass {
     static var productDetailPass = NSDictionary()
+    
 }

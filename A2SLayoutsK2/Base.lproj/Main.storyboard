@@ -191,25 +191,25 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="799"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="exl-EA-yrO">
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="exl-EA-yrO">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="799"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RZr-Wq-gFW">
-                                                        <size key="itemSize" width="175" height="175"/>
+                                                        <size key="itemSize" width="170" height="170"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                        <inset key="sectionInset" minX="10" minY="10" maxX="0.0" maxY="0.0"/>
+                                                        <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectCell0" id="Iga-S5-Jqp" customClass="P1Cell2CollectionViewCell" customModule="A2SLayoutsK2" customModuleProvider="target">
-                                                            <rect key="frame" x="10" y="10" width="175" height="175"/>
+                                                            <rect key="frame" x="10" y="10" width="170" height="170"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                                <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wZX-o2-Ha5">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
                                                                     </imageView>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -225,12 +225,6 @@
                                                     </connections>
                                                 </collectionView>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="exl-EA-yrO" firstAttribute="top" secondItem="fTq-Lq-fMS" secondAttribute="topMargin" constant="-8" id="2YN-xE-VXZ"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="exl-EA-yrO" secondAttribute="bottom" constant="-8" id="9pd-dz-tij"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="exl-EA-yrO" secondAttribute="trailing" constant="-8" id="YKF-gb-Hch"/>
-                                                <constraint firstItem="exl-EA-yrO" firstAttribute="leading" secondItem="fTq-Lq-fMS" secondAttribute="leadingMargin" constant="-8" id="kxd-zf-TTy"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="collectionView" destination="exl-EA-yrO" id="1Ve-JY-48Q"/>
@@ -262,10 +256,10 @@
             </objects>
             <point key="canvasLocation" x="1575" y="428"/>
         </scene>
-        <!--View Controller-->
+        <!--Product All View Controller-->
         <scene sceneID="unI-10-BQH">
             <objects>
-                <viewController id="q0E-eX-cpe" sceneMemberID="viewController">
+                <viewController id="q0E-eX-cpe" customClass="P1ProductAllViewController" customModule="A2SLayoutsK2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="P5c-B4-DIa"/>
                         <viewControllerLayoutGuide type="bottom" id="ngY-bW-yum"/>
@@ -274,22 +268,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ShowAll" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EyP-1c-3do">
-                                <rect key="frame" x="30" y="150" width="60" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2aW-kO-A7h">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eej-Uk-YQQ">
+                                    <size key="itemSize" width="170" height="170"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectCell0" id="qKn-mt-YG0" customClass="P1ProductAllCell0CollectionViewCell" customModule="A2SLayoutsK2" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="74" width="170" height="170"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6oH-wx-V0R">
+                                                    <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpE-zD-MYR">
+                                                    <rect key="frame" x="8" y="141" width="154" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="imageViewProduct" destination="6oH-wx-V0R" id="Blj-rr-RhM"/>
+                                            <outlet property="lblProductName" destination="zpE-zD-MYR" id="Ztd-qC-fB8"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="q0E-eX-cpe" id="Pyp-3T-9zu"/>
+                                    <outlet property="delegate" destination="q0E-eX-cpe" id="a8Z-pV-H2G"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2aW-kO-A7h" firstAttribute="leading" secondItem="rLz-zy-aUe" secondAttribute="leadingMargin" constant="-20" id="1YD-7p-iTe"/>
+                            <constraint firstItem="2aW-kO-A7h" firstAttribute="bottom" secondItem="rLz-zy-aUe" secondAttribute="bottomMargin" id="PmX-8X-mHb"/>
+                            <constraint firstItem="2aW-kO-A7h" firstAttribute="top" secondItem="rLz-zy-aUe" secondAttribute="topMargin" id="f1c-Bh-bmk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2aW-kO-A7h" secondAttribute="trailing" constant="-20" id="o3x-1d-FIl"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NaZ-qh-Ykq"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="600"/>
+                    <connections>
+                        <outlet property="collectionView" destination="2aW-kO-A7h" id="pVL-b0-d2o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mAp-O0-lUU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2396" y="-32"/>
+            <point key="canvasLocation" x="2409" y="-245"/>
         </scene>
         <!--Product Detail View Controller-->
         <scene sceneID="5y4-hV-Tax">

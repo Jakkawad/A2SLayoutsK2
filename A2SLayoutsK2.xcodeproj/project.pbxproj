@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		847432631CF2C8B4006D9B5E /* P1ProductAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847432621CF2C8B4006D9B5E /* P1ProductAllViewController.swift */; };
+		847432661CF2C99A006D9B5E /* P1ProductAllCell0CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847432651CF2C99A006D9B5E /* P1ProductAllCell0CollectionViewCell.swift */; };
 		848848681CF005890004DDEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848848671CF005890004DDEF /* AppDelegate.swift */; };
 		8488486A1CF005890004DDEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848848691CF005890004DDEF /* ViewController.swift */; };
 		8488486D1CF005890004DDEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8488486B1CF005890004DDEF /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		4BE8DB2F44BF56FEAD822EA2 /* Pods-A2SLayoutsK2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A2SLayoutsK2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-A2SLayoutsK2/Pods-A2SLayoutsK2.debug.xcconfig"; sourceTree = "<group>"; };
+		847432621CF2C8B4006D9B5E /* P1ProductAllViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P1ProductAllViewController.swift; sourceTree = "<group>"; };
+		847432651CF2C99A006D9B5E /* P1ProductAllCell0CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P1ProductAllCell0CollectionViewCell.swift; sourceTree = "<group>"; };
 		848848641CF005890004DDEF /* A2SLayoutsK2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A2SLayoutsK2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848848671CF005890004DDEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		848848691CF005890004DDEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +82,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8474325F1CF2BC8A006D9B5E /* Class */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		847432641CF2C97E006D9B5E /* ProductAll */ = {
+			isa = PBXGroup;
+			children = (
+				847432621CF2C8B4006D9B5E /* P1ProductAllViewController.swift */,
+				847432651CF2C99A006D9B5E /* P1ProductAllCell0CollectionViewCell.swift */,
+			);
+			name = ProductAll;
+			sourceTree = "<group>";
+		};
 		8488485B1CF005890004DDEF = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +127,7 @@
 				8488486E1CF005890004DDEF /* Assets.xcassets */,
 				848848701CF005890004DDEF /* LaunchScreen.storyboard */,
 				848848731CF005890004DDEF /* Info.plist */,
+				8474325F1CF2BC8A006D9B5E /* Class */,
 				8488488A1CF007E20004DDEF /* Function */,
 				8488487F1CF0078A0004DDEF /* Struct */,
 			);
@@ -120,6 +141,7 @@
 				848848911CF00D530004DDEF /* Cell1 */,
 				848848941CF01CA90004DDEF /* Cell2 */,
 				848848971CF03CF60004DDEF /* ProductDetail */,
+				847432641CF2C97E006D9B5E /* ProductAll */,
 			);
 			name = Page1;
 			sourceTree = "<group>";
@@ -306,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8488489B1CF065A00004DDEF /* P1ProductDetailCell4TableViewCell.swift in Sources */,
+				847432631CF2C8B4006D9B5E /* P1ProductAllViewController.swift in Sources */,
 				848848991CF03D100004DDEF /* P1ProductDetailCell0TableViewCell.swift in Sources */,
 				848848931CF00D610004DDEF /* P1Cell2CollectionViewCell.swift in Sources */,
 				848848961CF01CC90004DDEF /* P1ProductDetailViewController.swift in Sources */,
@@ -318,6 +341,7 @@
 				8488487E1CF007290004DDEF /* Page1ViewController.swift in Sources */,
 				848848861CF007D00004DDEF /* basePass.swift in Sources */,
 				8488488C1CF009F20004DDEF /* P1Cell1TableViewCell.swift in Sources */,
+				847432661CF2C99A006D9B5E /* P1ProductAllCell0CollectionViewCell.swift in Sources */,
 				8488488E1CF00AD30004DDEF /* P1Cell1CollectionViewCell.swift in Sources */,
 				8488486A1CF005890004DDEF /* ViewController.swift in Sources */,
 				848848681CF005890004DDEF /* AppDelegate.swift in Sources */,

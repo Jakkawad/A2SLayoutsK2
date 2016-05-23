@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import MapleBacon
 
 class Page1ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -71,6 +73,7 @@ class Page1ViewController: UIViewController, UITableViewDataSource, UITableViewD
 
         navigationController?.navigationBar.barTintColor = UIColor(red: 16/255, green: 132/255, blue: 142/255, alpha: 1.0)
         self.title = "All2Sale"
+        
         
         // Do any additional setup after loading the view.
     }
