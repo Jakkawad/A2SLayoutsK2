@@ -40,7 +40,7 @@ class P1ProductAllViewController: UIViewController, UICollectionViewDataSource, 
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let col0 = collectionView.dequeueReusableCellWithReuseIdentifier(baseCell.collectCell0, forIndexPath: indexPath) as? P1ProductAllCell0CollectionViewCell
-        let dummyImageURL = NSURL(string: dummyImage("170x170"))
+        let dummyImageURL = NSURL(string: dummyImage("176x176"))
         let item = dataJSON[indexPath.row] as! NSDictionary
         col0?.lblProductName.text = item.objectForKey("ProductName") as? String
         col0?.imageViewProduct.setImageWithURL(dummyImageURL!)

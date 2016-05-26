@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		845DDF761CF6A45900AB2753 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845DDF751CF6A45900AB2753 /* Product.swift */; };
 		847432631CF2C8B4006D9B5E /* P1ProductAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847432621CF2C8B4006D9B5E /* P1ProductAllViewController.swift */; };
 		847432661CF2C99A006D9B5E /* P1ProductAllCell0CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847432651CF2C99A006D9B5E /* P1ProductAllCell0CollectionViewCell.swift */; };
 		847432681CF2F9C0006D9B5E /* P1Cell3TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847432671CF2F9C0006D9B5E /* P1Cell3TableViewCell.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		4BE8DB2F44BF56FEAD822EA2 /* Pods-A2SLayoutsK2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A2SLayoutsK2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-A2SLayoutsK2/Pods-A2SLayoutsK2.debug.xcconfig"; sourceTree = "<group>"; };
+		845DDF751CF6A45900AB2753 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		847432621CF2C8B4006D9B5E /* P1ProductAllViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P1ProductAllViewController.swift; sourceTree = "<group>"; };
 		847432651CF2C99A006D9B5E /* P1ProductAllCell0CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P1ProductAllCell0CollectionViewCell.swift; sourceTree = "<group>"; };
 		847432671CF2F9C0006D9B5E /* P1Cell3TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P1Cell3TableViewCell.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		8474325F1CF2BC8A006D9B5E /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				845DDF751CF6A45900AB2753 /* Product.swift */,
 			);
 			name = Class;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				8488488E1CF00AD30004DDEF /* P1Cell1CollectionViewCell.swift in Sources */,
 				8488486A1CF005890004DDEF /* ViewController.swift in Sources */,
 				848848681CF005890004DDEF /* AppDelegate.swift in Sources */,
+				845DDF761CF6A45900AB2753 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
