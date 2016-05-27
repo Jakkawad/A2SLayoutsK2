@@ -17,8 +17,8 @@ class P1Cell2CollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        lblProductName.backgroundColor = UIColor(red: 166, green: 166, blue: 166, alpha: 0.7)
-        lblProductPrice.backgroundColor = UIColor(red: 166, green: 166, blue: 166, alpha: 0.7)
+        //lblProductName.backgroundColor = UIColor(red: 166, green: 166, blue: 166, alpha: 0.7)
+        //lblProductPrice.backgroundColor = UIColor(red: 166, green: 166, blue: 166, alpha: 0.7)
         // Initialization code
     }
 

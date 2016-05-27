@@ -16,8 +16,9 @@ class P1Cell2TableViewCell: UITableViewCell, UICollectionViewDataSource, UIColle
     
     var dataArray = NSArray()
     
+    
     func loadData() {
-        Alamofire.request(.POST, "https://www.all2sale.com/sendmail/testfunction/json/apitest.php", parameters: ["api":"productall","productall":"8"]).responseJSON { response in
+        Alamofire.request(.POST, "https://www.all2sale.com/sendmail/testfunction/json/apitest.php", parameters: ["api":"product_rand","product_rand":"8"]).responseJSON { response in
             //print(response.result.value)
             self.dataArray = response.result.value as! NSArray
             self.collectionView.reloadData()
@@ -43,6 +44,9 @@ class P1Cell2TableViewCell: UITableViewCell, UICollectionViewDataSource, UIColle
         baseUrl += imageFullUrl!
         let imageUrl = NSURL(string: baseUrl)
         col0?.imageViewProduct.setImageWithURL(imageUrl!)
+        //col0?.layer.borderWidth = 1
+        //col0?.layer.borderColor = UIColor.blackColor().CGColor
+        
         return col0!
     }
     
