@@ -27,7 +27,7 @@
 		8488486F1CF005890004DDEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8488486E1CF005890004DDEF /* Assets.xcassets */; };
 		848848721CF005890004DDEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848848701CF005890004DDEF /* LaunchScreen.storyboard */; };
 		8488487A1CF005950004DDEF /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 848848791CF005950004DDEF /* Podfile */; };
-		8488487E1CF007290004DDEF /* ProductDetailSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488487D1CF007290004DDEF /* ProductDetailSegue.swift */; };
+		8488487E1CF007290004DDEF /* Page1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488487D1CF007290004DDEF /* Page1ViewController.swift */; };
 		848848851CF007D00004DDEF /* baseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848848801CF007D00004DDEF /* baseCell.swift */; };
 		848848861CF007D00004DDEF /* basePass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848848811CF007D00004DDEF /* basePass.swift */; };
 		848848871CF007D00004DDEF /* baseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848848821CF007D00004DDEF /* baseURL.swift */; };
@@ -68,7 +68,7 @@
 		848848711CF005890004DDEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		848848731CF005890004DDEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		848848791CF005950004DDEF /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		8488487D1CF007290004DDEF /* ProductDetailSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailSegue.swift; sourceTree = "<group>"; };
+		8488487D1CF007290004DDEF /* Page1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page1ViewController.swift; sourceTree = "<group>"; };
 		848848801CF007D00004DDEF /* baseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = baseCell.swift; sourceTree = "<group>"; };
 		848848811CF007D00004DDEF /* basePass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = basePass.swift; sourceTree = "<group>"; };
 		848848821CF007D00004DDEF /* baseURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = baseURL.swift; sourceTree = "<group>"; };
@@ -126,6 +126,27 @@
 			name = Icon;
 			sourceTree = "<group>";
 		};
+		847152C01CF84FCD0076ADD7 /* Page3 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Page3;
+			sourceTree = "<group>";
+		};
+		847152C11CF84FD50076ADD7 /* Page4 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Page4;
+			sourceTree = "<group>";
+		};
+		847152C21CF84FDE0076ADD7 /* Page5 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Page5;
+			sourceTree = "<group>";
+		};
 		8474325F1CF2BC8A006D9B5E /* Class */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +196,9 @@
 		848848661CF005890004DDEF /* A2SLayoutsK2 */ = {
 			isa = PBXGroup;
 			children = (
+				847152C21CF84FDE0076ADD7 /* Page5 */,
+				847152C11CF84FD50076ADD7 /* Page4 */,
+				847152C01CF84FCD0076ADD7 /* Page3 */,
 				845DDF791CF6C10A00AB2753 /* Page2 */,
 				8488487C1CF007160004DDEF /* Page1 */,
 				848848671CF005890004DDEF /* AppDelegate.swift */,
@@ -194,7 +218,7 @@
 		8488487C1CF007160004DDEF /* Page1 */ = {
 			isa = PBXGroup;
 			children = (
-				8488487D1CF007290004DDEF /* ProductDetailSegue.swift */,
+				8488487D1CF007290004DDEF /* Page1ViewController.swift */,
 				848848911CF00D530004DDEF /* Cell1 */,
 				848848941CF01CA90004DDEF /* Cell2 */,
 				848848971CF03CF60004DDEF /* ProductDetail */,
@@ -407,7 +431,7 @@
 				8488489D1CF065CF0004DDEF /* P1ProductDetailCell4CollectionViewCell.swift in Sources */,
 				848848881CF007D00004DDEF /* dummyData.swift in Sources */,
 				848848901CF00D040004DDEF /* P1Cell2TableViewCell.swift in Sources */,
-				8488487E1CF007290004DDEF /* ProductDetailSegue.swift in Sources */,
+				8488487E1CF007290004DDEF /* Page1ViewController.swift in Sources */,
 				848848861CF007D00004DDEF /* basePass.swift in Sources */,
 				8488488C1CF009F20004DDEF /* P1Cell1TableViewCell.swift in Sources */,
 				847152BF1CF847790076ADD7 /* funcProduct.swift in Sources */,
