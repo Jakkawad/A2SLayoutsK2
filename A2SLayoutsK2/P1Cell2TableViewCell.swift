@@ -44,6 +44,10 @@ class P1Cell2TableViewCell: UITableViewCell, UICollectionViewDataSource, UIColle
         baseUrl += imageFullUrl!
         let imageUrl = NSURL(string: baseUrl)
         col0?.imageViewProduct.setImageWithURL(imageUrl!)
+        let productRaing = item.objectForKey("ProductRating") as! String
+        let productRaingUrl = NSURL(string: getProductRating(productRaing))
+        col0?.imageViewProductRating.setImageWithURL(productRaingUrl!)
+        //print(productRaing)
         //col0?.layer.borderWidth = 1
         //col0?.layer.borderColor = UIColor.blackColor().CGColor
         

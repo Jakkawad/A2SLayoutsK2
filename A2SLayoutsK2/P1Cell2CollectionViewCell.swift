@@ -13,6 +13,7 @@ class P1Cell2CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageViewProduct: UIImageView!
     @IBOutlet weak var lblProductName: UILabel!
     @IBOutlet weak var lblProductPrice: UILabel!
+    @IBOutlet weak var imageViewProductRating: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -67,7 +67,7 @@ class Page1ViewController: UIViewController, UITableViewDataSource, UITableViewD
             return 800
         }
     }
-    
+    /*
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "ProductDetailSegue" {
             if let indexPath = tableView.indexPathForSelectedRow {
@@ -78,12 +78,15 @@ class Page1ViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
         print("KK")
     }
+    */
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationController?.navigationBar.barTintColor = UIColor(red: 16/255, green: 132/255, blue: 142/255, alpha: 1.0)
         self.title = "All2Sale"
         
+        
+        //print(getProductRating("5"))
         // Do any additional setup after loading the view.
     }
 

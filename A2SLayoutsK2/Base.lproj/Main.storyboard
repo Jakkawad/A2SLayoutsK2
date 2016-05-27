@@ -309,12 +309,16 @@
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star0.png" translatesAutoresizingMaskIntoConstraints="NO" id="LFC-br-kjz">
+                                                                        <rect key="frame" x="8" y="216" width="102" height="22"/>
+                                                                    </imageView>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             </view>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <connections>
                                                                 <outlet property="imageViewProduct" destination="wZX-o2-Ha5" id="pWe-6F-MZR"/>
+                                                                <outlet property="imageViewProductRating" destination="LFC-br-kjz" id="UvF-22-7vO"/>
                                                                 <outlet property="lblProductName" destination="kYI-4h-dPv" id="32B-Ft-ZZw"/>
                                                                 <outlet property="lblProductPrice" destination="Gt3-it-omM" id="4KE-vB-Xy5"/>
                                                                 <segue destination="Dxp-6k-pzt" kind="push" id="cS2-qJ-olW"/>
@@ -651,8 +655,11 @@
             <point key="canvasLocation" x="763" y="428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="star0.png" width="119" height="26"/>
+    </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="KLW-qr-jdG"/>
         <segue reference="cS2-qJ-olW"/>
-        <segue reference="5cl-4b-Jcb"/>
     </inferredMetricsTieBreakers>
 </document>
